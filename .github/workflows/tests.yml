@@ -22,5 +22,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pytest
-      - name: Test with Pycharm
-        run: cd ./get_function/test_lambdafunc.py
+      - name: Change directory
+        run: cd ./get_function
+      - name: Install with Pycharm
+        run: pytest ./test_lambdafunc.py
