@@ -23,4 +23,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
       - name: Test with Pycharm
-        run: cd cloud-resume-challenge\get_function\test_lambdafunc.py
+        run: cd ./get_function/test_lambdafunc.py
