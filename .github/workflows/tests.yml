@@ -25,4 +25,4 @@ jobs:
       - name: Change directory
         run: cd ./get_function
       - name: Install with Pycharm
-        run: pytest ./test_lambdafunc.py
+        run: pytest test_lambdafunc.py
