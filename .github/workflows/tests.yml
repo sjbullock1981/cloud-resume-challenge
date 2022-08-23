@@ -12,15 +12,15 @@ jobs:
         python-version: [3.9]
 
     steps:
-    - name: Checkout repo
-    - uses: actions/checkout@v2
-    - name: Setup Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pytest
-    - name: Test with Pycharm
-      run: cd cloud-resume-challenge\get_function\test_lambdafunc.py
+      - name: Checkout repo
+      - uses: actions/checkout@v2
+      - name: Setup Python ${{ matrix.python-version }}
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+      - name: Test with Pycharm
+        run: cd cloud-resume-challenge\get_function\test_lambdafunc.py
