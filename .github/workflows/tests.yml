@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
           pip install boto3
-          pip install 'moto[dynamodb]
+          pip install 'moto[dynamodb]'
       - name: Change directory
         run: cd ./get_function
       - name: Install with Pycharm
