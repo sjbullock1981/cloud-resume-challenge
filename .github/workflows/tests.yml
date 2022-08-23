@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [ubuntu-latest]
         python-version: [3.9]
 
     steps:
@@ -22,4 +22,4 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
     - name: Test with Pycharm
-      run: pytest .\testlambdafunc.py
+      run: cd cloud-resume-challenge\get_function\test_lambdafunc.py
