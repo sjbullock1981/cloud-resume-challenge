@@ -24,8 +24,7 @@ jobs:
           pip install pytest
           pip install boto3
           pip install 'moto[dynamodb]'
-      - name: Change directory
-        run: cd ./get_function
+          pip install -e
       - name: Install with Pycharm
         working-directory: ./get_function
         run: pytest test_lambdafunc.py
