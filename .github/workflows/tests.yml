@@ -26,4 +26,4 @@ jobs:
           pip install 'moto[dynamodb]'
       - name: Run Test
         working-directory: ./get_function
-        run: python -m pytest --import-mode=append
+        run: AWS_DEFAULT_REGION=us-east-1 python -m pytest --import-mode=append test_lambdafunc.py
