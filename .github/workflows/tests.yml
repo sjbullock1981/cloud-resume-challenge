@@ -25,5 +25,5 @@ jobs:
           pip install boto3
           pip install 'moto[dynamodb]'
       - name: Run Test
-        working-directory: ./get_function/tests
+        working-directory: ./get_function
         run: python -m pytest --import-mode=append
