@@ -55,7 +55,7 @@ def test_handler_for_status_200(use_moto):
     return_data = lambda_handler(event, "")
     body = json.loads(return_data['body'])
 
-    assert return_data['statusCode'] == 400
+    assert return_data['statusCode'] == 200
    # assert body['loadcount'] == '100'
    # assert body['Quantity'] == '001'
 
