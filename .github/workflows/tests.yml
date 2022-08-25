@@ -32,4 +32,4 @@ jobs:
           aws-region: us-east-1
       - name: Run Test
         working-directory: ./get_function
-        run: python -m pytest --import-mode=append ./tests/test_lambdafunc.py
+        run: python -m pytest --import-mode=append test_lambdafunc.py
