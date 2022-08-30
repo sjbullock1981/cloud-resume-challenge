@@ -92,14 +92,16 @@ Resources:
                 - "s3:GetObject"
                 - "s3:PutObject"
                 - "s3:DeleteObject"          
-              Resource: !Join
-                - ''
-                - - 'arn:aws:s3:::'
-                - !Ref MyWebsite
-                - /*
-                - ''
-                - - 'arn:aws:s3:::'
-                - !Ref MyWebsite
+              Resource:
+                - !Join
+                  - ''
+                  - - 'arn:aws:s3:::'
+                  - !Ref MyWebsite
+                - !Join
+                  - /*
+                  - ''
+                  - - 'arn:aws:s3:::'
+                  - !Ref MyWebsite
               Principal: "*"   
 
 
