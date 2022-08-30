@@ -98,7 +98,6 @@ Resources:
                   - - 'arn:aws:s3:::'
                     - !Ref MyWebsite
                 - !Join
-                  - /*
                   - ''
                   - - 'arn:aws:s3:::'
                     - !Ref MyWebsite
