@@ -96,12 +96,12 @@ Resources:
                 - !Join
                   - ''
                   - - 'arn:aws:s3:::'
-                  - !Ref MyWebsite
+                    - !Ref MyWebsite
                 - !Join
                   - /*
                   - ''
                   - - 'arn:aws:s3:::'
-                  - !Ref MyWebsite
+                    - !Ref MyWebsite
               Principal: "*"   
 
 
