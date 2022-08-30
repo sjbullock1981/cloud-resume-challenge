@@ -101,7 +101,7 @@ Resources:
                 - ''
                 - - 'arn:aws:s3:::'
                   - !Ref MyWebsite
-            Principal: "*"   
+            Principal: "*"
 
 
   GetFunction:
