@@ -72,11 +72,21 @@ jobs:
           SOURCE_DIR: ./resume-site
 
  # Invalidate CloudFront (this action)
-      - name: Invalidate CloudFront
+      - name: Invalidate CloudFront index
         uses: chetan/invalidate-cloudfront-action@v2
         env:
           DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
-          PATHS: ./resume-site/index.html ./resume-site/styles/resume.css
+          PATHS: "./resume-site/index.html"
+          AWS_REGION: "us-east-1"
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+           # Invalidate CloudFront (this action)
+      - name: Invalidate CloudFront styles
+        uses: chetan/invalidate-cloudfront-action@v2
+        env:
+          DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
+          PATHS: "./resume-site/styles/resume.css"
           AWS_REGION: "us-east-1"
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
