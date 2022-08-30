@@ -1,88 +1,202 @@
-<!DOCTYPE html>
-<html>
+      
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html>
     <head>
-        <link rel="stylesheet" href="styles/cvstyle.css">
-        <script src="https://kit.fontawesome.com/2e237828db.js" crossorigin="anonymous"></script>
         <script type ="text/javascript">
-                function visitcount() {
-                    return fetch("https://vcedwqxcp8.execute-api.us-east-1.amazonaws.com/Prod/get").then(function(response) {
-                    return response.json();
-                    }).then(function(json) {
-                        return json;
-                    });
-                                    }
+            function visitcount() {
+                return fetch("https://vcedwqxcp8.execute-api.us-east-1.amazonaws.com/Prod/get").then(function(response) {
+                return response.json();
+                }).then(function(json) {
+                    return json;
+                });
+                                }
 
-                    visitcount().then(function(result) {
-                    document.getElementById("website-counter").innerHTML = result
-                    console.log(result);
-                    });
-            
-        </script>
+                visitcount().then(function(result) {
+                document.getElementById("website-counter").innerHTML = result
+                console.log(result);
+                });
         
-       
-               
+    </script>
+        <title>Sam Bullock | Infrastructure Engineer| sjbullock1981@gmail.com</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+    
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
+        <link rel="stylesheet" type="text/css" href="styles\resume.css" media="all" />
+    
     </head>
     <body>
+    
+    <div id="doc2" class="yui-t7">
+        <div id="inner">
         
+            <div id="hd">
+                <div class="yui-gc">
+                    <div class="yui-u first">
+                        <h1>Sam Bullock</h1>
+                        <h2>Infrastructure Engineer</h2>
+                    </div>
+    
+                    <div class="yui-u">
+                        <div class="contact-info">
+                            <h3><a href="mailto:sjbullock1981@gmail.com">sjbullock1981@gmail.com</a></h3>
+                            <h3>07885971174</h3>
+                        </div><!--// .contact-info -->
+                    </div>
+                </div><!--// .yui-gc -->
+            </div><!--// hd -->
+    
+            <div id="bd">
+                <div id="yui-main">
+                    <div class="yui-b">
+    
+                        <div class="yui-gf">
+                            <div class="yui-u first">
+                                <h2>Profile</h2>
+                            </div>
+                            <div class="yui-u">
+                                <p class="enlarge">
+                                    Insert Personnal profile text 
+                                </p>
+                            </div>
+                        </div><!--// .yui-gf -->
+    
 
-          <div class="main">
-                <div class="top-section">
-                    <!-- <img src="INSERT PROFILE PICTURE" class="profile"> -->
-                    <p class="p1">Sam Bullock</span></p>
-                    <p class="p2">Infrastructure Engineer</p> 
-                    <p class="p2profile">A highly diligent and self-motivated technical specialist with over 15 years’ experience within highly regulated enterprise environments. Possesses an extensive technical background, solid operational experience with specialist focus on migrations, project design, development and delivery of Wintel solutions. Applies a methodical approach to problem solving and has an outstanding record for diagnosing and resolving complex technical issues.</p>        
-                </div>  
-                
-                <div class="top-section-contacts">
-                    <div class="contact-float-left"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;sjbullock1981@gmail.com</div>
-                    <div class="contact-float-right"><i class="fa-solid fa-location-pin"></i>&nbsp;&nbsp;Dunbar, Scotland</div>
-                    <div class="contact-float-left"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;07885971174</div>
-                    <div class="contact-float-right"><i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp; www.linkedin.com/in/sam-bullock-5421b232</div>
+    
+                        <div class="yui-gf">
+                            <div class="yui-u first">
+                                <h2>Relevant Skills</h2>
+                            </div>
+                            <div class="yui-u">
+                                <ul class="talent">
+                                    &bull; Windows Server (2003-2019)<br><br>
+                                    &bull; VMWare ESXi/vCener<br><br>
+                                    <li class="last">Active Directory<br><br>
+                                </ul>
+    
+                                <ul class="talent">
+                                    &bull; GPO Management<br><br>
+                                    &bull; AWS CloudFormation/SAM<br><br>
+                                    <li class="last">AWS S3<br><br>
+                                </ul>
+    
+                                <ul class="talent">
+                                    &bull; AWS CloudFront/Route 53<br><br>
+                                    &bull; Terraform<br><br>
+                                    <li class="last">Powershell<br><br>
+                                </ul>
+                            </div>
+                        </div><!--// .yui-gf-->
+    
+                        <div class="yui-gf">
+        
+                            <div class="yui-u first">
+                                <h2>Experience</h2>
+                            </div><!--// .yui-u -->
+    
+                            <div class="yui-u">
+    
+                                <div class="job">
+                                    <h2>Natwest Group</h2>
+                                    <h3>Windows Technical Specialist (Contract)</h3>
+                                    <h4>Jan 2021 - Dec 2021</h4>
+                                    <p>Technical specialist role for the banks business critical Stone data Centre exit program. Taking full technical accountability for the migration of ~ 3000 Windows servers from source to target isolated environments in Edinburgh and London. <br><br>
+                                    Some key responsibilities / achievements<br><br>
+                                    &bull; Defined and documented end-to-end migration process for Virtual and Physical Wintel servers. <br><br>
+                                    &bull; Developed discovery scripts in PowerShell, to assist with capacity planning in target environments <br><br>
+                                    &bull; Liaise with key technology stakeholders to identify and mitigate against potential migration risks <br><br>
+                                    &bull; Delivered successful POC build ahead for critical Wintel services including Active directory Domain Controllers, IIS, Citrix Access Gateways and MS SQL <br><br>
+                                    &bull; Designed and implemented pre/post migration health checks using PowerShell scripts, improving overall Wintel migration times. <br><br>
+                                    &bull; Identified several consolidation opportunities on HP Blade hardware, resulting in significant cost saving for the program. <br><br> 
+                                    &bull; Created standard change templates for all Wintel migration activities, reducing the lead times for change approvals. </p>
+                                </div>
+    
+                                <div class="job">
+                                    <h2>Natwest Group</h2>
+                                    <h3>Windows Technical Specialist (Contract)</h3>
+                                    <h4>Jan 2018 - Dec 2020</h4>
+                                    <p> London data center relocation project was a high priority project as part of the bank’s wider transformation program. I was responsible for Wintel deliverables on three main work streams, SAN Migrations, NAS migration and Application re-platforming.  <br><br>
+                                    &bull; Migrated production data storage for several critical bank applications from legacy HP 3PAR storage onto EMC VMAX arrays using host-based mirroring. <br><br>
+                                    &bull; Created detailed documentation on migrating Wintel servers to new SAN storage, this was approved for use by future projects and BAU teams.  <br><br>
+                                    &bull; Complex troubleshooting of storage software related issues with 3rd party vendor Veritas.<br><br>
+                                    &bull; Provide technical consultation for application teams moving to Private cloud ensuring the banks infrastructure and security standards are met.<br><br>
+                                    &bull; Updating build, config and migration activities in Jira for feature teams to track the status of user stories and epics. <br><br>
+                                    &bull; Designed and configured multiple GPO updates with GPMC to facilitate applications migrating to Group domains.<br><br>
+                                    &bull; Re-platformed inhouse SQL monitoring application from Windows 2008 onto Windows Server 2016 high availability cluster solution<br><br>
+                                	&bull; Created PowerShell script to perform before & after migration accessibility checks on NAS CIFS. </p>						
+                                </div>
+    
+                                <div class="job">
+                                    <h2>Royal Bank of Scotland</h2>
+                                    <h3>Window SME (Contract)</h3>
+                                    <h4>Oct 2012 - Dec 2018</h4>
+                                    <p> Part of the Wintel technical resourcing team, I was assigned to various BAU platform support tasks as well as some smaller scale service improvement projects.<br><br>
+                                    &bull; Developed PowerShell scripts to upgrade ILO firmware and drivers across ~1500 HP servers, remediating against security vulnerabilities<br><br>
+                                    &bull; Tech LEad for a decommissioning project, which proactively identified decom candidates using powershell scripted discovery, resulting in over 600 assets being decommissioned over a 12-month period<br><br>
+                                    &bull; Supported regular security patching events of Windows production estate using SCCM tool.<br><br>
+                                    &bull; Evaluated new technical designs during Technical Design Workshops by providing technical expertise to make sure designs meet the bank’s technical standards.<br><br>
+                                    &bull; Involved in Engineering automation POC to standardize the banks server build image with Puppet and PowerShell. <br><br>
+                                    &bull; Produced a PowerShell script to repoint Windows servers to new DNS resolvers.</p>							
+                                </div>
+    
+    
+                                <div class="job last">
+                                    <h2>Lloyds Banking Group </h2>
+                                    <h3>Infrastructure Developer </h3>
+                                    <h4>2008 – 2012</h4>
+                                    <p> Provide 3rd/4th line support for over 1100 Windows Servers, 4000 VDI users and 6000 client PC's, and project-based Wintel server delivery. The project-based work consists of building, failing over and disaster recovery testing Wintel servers on HP blade, VMware vSphere and SAN technologies. <br><br>
+                                    &bull; Perform “fit for purpose” analysis of project infrastructure solution documents. <br><br>
+                                    &bull; Active Directory, group policy design and implementation.<br><br>
+                                    &bull; Produce project technical support documentation for handover into production environment.<br><br>
+                                    &bull; Plan, document and test disaster recovery procedures for virtual and physical infrastructure using NetBackup and VMware restores.<br><br>
+                                    &bull; Approver of new Wintel security design documents, ensuring the bank's security, SOX compliance and ITEC standards were followed. </p>                                    					
+                                </div>
+    
+                            </div><!--// .yui-u -->
+                        </div><!--// .yui-gf -->
+    
+    
+                        <div class="yui-gf last">
+                            <div class="yui-u first">
+                                <h2>Education</h2>
+                            </div>
+                            <div class="yui-u">
+                                <h2>Salford University, 2005</h2>
+                                <h3>BSC Computer Science and Information Systems &mdash; </h3>
+                            </div>
+                        </div><!--// .yui-gf -->
 
-                </div>
+                        <div class="yui-gf last">
+                            <div class="yui-u first">
+                                <h2>Certifications</h2>
+                            </div>
+                            <div class="yui-u">
+                                <p>AWS Certified Solutions Architect - Associate: 4th May 2022 (JYVYT82DNEEEQ7S0)</p>
+                                <p>HashiCorp Certified Terraform Associate: 2nd June 2022</p>
 
-                <div class="clearfix"></div>
-
-                    <div class="col-div-8">
-                        <div class="content-box">
-                            <p class="head">Key Skills</p>
-                            <p class="subhead">Infrastructure, Hardware & Platform Management: Windows Server (2003-2019), VMware ESXi/vCenter, HP Server/Blade, HP Onboard Administrator, iLO Management, Active Directory, GPO Management, DHCP, DNS, Network Routing, Firewalls, McAfee EPO, NetBackup, Veritas Storage Foundation, Qualys, Wireshark, AWS, Terraform</p> 
-                            <p>Change Management / Collaboration Tools: ServiceNow (Kanban, Reporting), Atlassian Suite (Confluence, Jira)</p> 
-                            <p>Scripting: PowerShell</p></p>
-
-                                    <p class="head">Career History</p>
-                                    <p>Wintel Technical Specialist (Contract) | NatWest | Jan 2021 – Dec 2021</p>
-                                    <p class="p3main">Technical specialist role for the banks business critical Stone data Centre exit program. Taking full technical 
-                                        accountability for the migration of ~ 3000 Windows servers from source to target isolated environments in 
-                                        Edinburgh and London. The role involved investigating the existing infrastructure, in collaboration with application 
-                                        teams, to plan migration schedules and identify redundant infrastructure for decommissioning.</p>
-                                        <p class="p3main">Some key responsibilities / achievements</p>
-                                        <ul class="worklist">
-                                            <li>Developed discovery scripts in PowerShell, to assist with capacity planning in target environments</li>
-                                            <li>Liaise with key technology stakeholders to identify and mitigate against potential risks associated with pending migrations</li>
-                                            <li>Defined and documented migration process for Virtual and Physical Wintel servers aiding the wider migration team.</li>
-                                            <li>Delivered successful POC build ahead for critical Wintel services including Active directory Domain Controllers, IIS, Citrix Access Gateways and MS SQL</li>
-                                            <li>Designed and implemented pre/post migration health checks using PowerShell scripts, improving overall Wintel migration times.</li>
-                                            <li>Identified several consolidation opportunities on HP Blade enclosures, which contributed to a significant cost saving for the program. </li>
-                                            <li>Created standard change templates for all Wintel migration activities, reducing the lead times for change approvals.</li>
-                                            
-                                        </ul> 
-                                    <br/>
-
-                                    
-                        </div>    
-                    </div>                    
-                      
-                   
-                        <p>
-                            Copyright © Sam Bullock, 2022<br/> 
+                            </div>
+    
+    
+                    </div><!--// .yui-b -->
+                </div><!--// yui-main -->
+            </div><!--// bd -->
+    
+            <div id="ft">
+                <p>
                             CV Website Views: <span id="website-counter"></span><br/>
                     
                         </p>
-                    
-                       
-          </div>
-                    
-    </body>
+            </div><!--// footer -->
     
-</html>
+        </div><!-- // inner -->
+    
+    
+    </div><!--// doc -->
+    
+    
+    </body>
+    </html>
+    
+    
