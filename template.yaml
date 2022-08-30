@@ -93,14 +93,16 @@ Resources:
               - 's3:PutObject'
               - 's3:DeleteObject'
             Resource:
-              - !Join
-                - ''
-                - - 'arn:aws:s3:::'
-                  - !Ref MyWebsite
-              - !Join
-                - ''
-                - - 'arn:aws:s3:::'
-                  - !Ref MyWebsite
+              - "arn:aws:s3:::my-resume-wesite123456/*"
+              - "arn:aws:s3:::my-resume-wesite123456/"
+              #- !Join
+              #  - ''
+              #  - - 'arn:aws:s3:::'
+              #    - !Ref MyWebsite
+              #- !Join
+              #  - ''
+              #  - - 'arn:aws:s3:::'
+              #    - !Ref MyWebsite
             Principal: "*"
 
 
