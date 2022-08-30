@@ -85,27 +85,23 @@ Resources:
         Id: MyPolicy
         Version: 2012-10-17
         Statement:
-          - Principal: 
-              Sid: PublicRead #PublicReadForGetBucketObjects
-              AWS: "*"
-            Action: 
-              -  "s3:GetObject"
-              -  "s3:PutObject"
-              -  "s3:DeleteObject"          
-            Resource: !Join
-              - ''
-              - - 'arn:aws:s3:::'
+            - Sid: PublicRead #PublicReadForGetBucketObjects
+              Effect: Allow
+              Action: 
+                - "s3:ListBucket" 
+                - "s3:GetObject"
+                - "s3:PutObject"
+                - "s3:DeleteObject"          
+              Resource: !Join
+                - ''
+                - - 'arn:aws:s3:::'
                 - !Ref MyWebsite
                 - /*
-            Effect: Allow
-          - Principal: "*"
-            Action: 
-              -  "s3:ListBucket"          
-            Resource: !Join
-              - ''
-              - - 'arn:aws:s3:::'
+                - ''
+                - - 'arn:aws:s3:::'
                 - !Ref MyWebsite
-            Effect: Allow    
+              Principal: "*"   
+
 
   GetFunction:
     Type: AWS::Serverless::Function
