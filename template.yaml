@@ -85,16 +85,16 @@ Resources:
         Id: MyPolicy
         Version: 2012-10-17
         Statement:
-          - Sid: PublicRead #PublicReadForGetBucketObjects
-            Effect: Allow
-            Action: 
-              - 's3:ListBucket'
-              - 's3:GetObject'
-              - 's3:PutObject'
-              - 's3:DeleteObject'
-            Resource:
-              - "arn:aws:s3:::my-resume-wesite123456/*"
-              - "arn:aws:s3:::my-resume-wesite123456/"
+          Sid: PublicRead #PublicReadForGetBucketObjects
+          Effect: Allow
+          Action: 
+            - 's3:ListBucket'
+            - 's3:GetObject'
+            - 's3:PutObject'
+            - 's3:DeleteObject'
+          Resource:
+            - "arn:aws:s3:::my-resume-wesite123456/*"
+            - "arn:aws:s3:::my-resume-wesite123456/"
               #- !Join
               #  - ''
               #  - - 'arn:aws:s3:::'
@@ -103,7 +103,7 @@ Resources:
               #  - ''
               #  - - 'arn:aws:s3:::'
               #    - !Ref MyWebsite
-            Principal: "*"
+          Principal: "*"
 
 
   GetFunction:
