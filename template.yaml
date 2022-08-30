@@ -96,15 +96,6 @@ Resources:
           Resource:
             - !Sub ${MyWebsite.Arn}/*
             - !Sub ${MyWebsite.Arn}
-            #- !Join
-            #- ''
-            #- - 'arn:aws:s3:::'
-            #  - !Ref MyWebsite
-            #- !Join
-            #- ''
-            #- - 'arn:aws:s3:::'
-            #  - !Ref MyWebsite
-          
 
 
   GetFunction:
