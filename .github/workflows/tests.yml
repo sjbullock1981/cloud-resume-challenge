@@ -66,7 +66,7 @@ jobs:
         with:
           args: --delete
         env:
-          AWS_S3_BUCKET: cloud-resume-challenge
+          AWS_S3_BUCKET: my-resume-wesite123456
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           SOURCE_DIR: ./resume-site
