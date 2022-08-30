@@ -105,6 +105,7 @@ Resources:
               - ''
               - - 'arn:aws:s3:::'
                 - !Ref MyWebsite
+            Effect: Allow    
 
   GetFunction:
     Type: AWS::Serverless::Function
