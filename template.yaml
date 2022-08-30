@@ -94,8 +94,8 @@ Resources:
             - 's3:PutObject'
             - 's3:DeleteObject'
           Resource:
-            - "arn:aws:s3:::my-resume-wesite123456/*"
-            - "arn:aws:s3:::my-resume-wesite123456/"
+            - !Sub ${MyWebsite.Arn}/*
+            - !Sub ${MyWebsite.Arn}
             #- !Join
             #- ''
             #- - 'arn:aws:s3:::'
