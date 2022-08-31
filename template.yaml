@@ -62,7 +62,7 @@ Resources:
           - sambullockcv.com
         DefaultCacheBehavior:
         ##  CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
-          ViewerProtocolPolicy: allow-all
+          ViewerProtocolPolicy: redirect-to-https
           TargetOriginId: my-resume-wesite123456.s3.us-east-1.amazonaws.com
           DefaultTTL: 0
           MinTTL: 0
