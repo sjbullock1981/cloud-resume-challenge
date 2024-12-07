@@ -2,7 +2,7 @@ import boto3
 import pytest
 import json
 
-from moto import mock_dynamodb
+from moto import mock_aws
 from app import lambda_handler
 
 TEST_TABLE = "visitor_count"
@@ -10,7 +10,7 @@ TEST_TABLE = "visitor_count"
 
 @pytest.fixture
 def use_moto():
-    @mock_dynamodb
+    @mock_aws
     def dynamodb_client():
         dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 
@@ -37,7 +37,7 @@ def use_moto():
     return dynamodb_client
 
 
-@mock_dynamodb
+@mock_aws
 def test_handler_for_status_200(use_moto):
     use_moto()
     table = boto3.resource('dynamodb', region_name='us-east-1').Table(TEST_TABLE)
