@@ -1,6 +1,6 @@
 import boto3
 import json
-
+    
 dynamodb = boto3.resource('dynamodb')
 ddbTableName = 'cloud-resume-challenge'
 table = dynamodb.Table(ddbTableName)
@@ -19,7 +19,7 @@ def lambda_handler(event, context):
     print( "Count = ", count)
         
     new_count = str(int(count)+1)
-        
+ 
     response = table.update_item(
         Key={
             'loadcount': 'visitcount'

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cloud_resume"
+version = "0.0.1"
+authors = [
+  { name="Sam Bullock", email="sjbullock1981@gmail.com" },
+]
+description = "package app.py to use in github actions workflow"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sjbullock1981/cloud-resume-challenge"
+"Bug Tracker" = "https://github.com/sjbullock1981/cloud-resume-challenge"

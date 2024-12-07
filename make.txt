@@ -1,0 +1,11 @@
+build
+sam build
+
+deploy infra:
+aws-vault exec iamadmin --no-session -- sam deploy
+
+deploy website
+aws-vault exec iamadmin --no-session -- aws s3 sync ./resume-site s3://my-resume-wesite123456
+
+invoke Lambda locally
+aws-vault exec iamadmin --no-session -- sam local invoke GetFunction
